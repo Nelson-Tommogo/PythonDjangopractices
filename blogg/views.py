@@ -2,23 +2,16 @@ from django.shortcuts import render
 
 post=[
     {
-        'Authur':'Nelson Tommogo',
-        'Title':'Geniuses Are not made',
-        'Content':'The Content',
+        'author':'Nelson Tommogo',
+        'title':'Geniuses Are not made',
+        'content':'The Content',
         'date_Posted':'August 21, 2022',
         
     },
-     {
-        'Authur':'Common Genius',
-        'Title':'Python Programming',
-        'Content':'The Content',
-        'date_Posted':'January 11, 2021',
-        
-    },
     {
-        'Authur':'Josephat Nanok',
-        'Title':'Database Programming',
-        'Content':'The Content',
+        'author':'Josephat Nanok',
+        'title':'Database Programming',
+        'content':'The Content',
         'date_Posted':'March 31, 2001',
         
     }
