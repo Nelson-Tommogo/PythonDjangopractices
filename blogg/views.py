@@ -14,6 +14,13 @@ post=[
         'content':'The Content',
         'date_Posted':'March 31, 2001',
         
+    },
+     {
+        'author':'James Kim',
+        'title':'java Programming',
+        'content':'The Content',
+        'date_Posted':'March 15, 2009',
+        
     }
 ]
 
