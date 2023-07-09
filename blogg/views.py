@@ -32,4 +32,4 @@ def home(request):
     return render(request, 'blogg/home.html',context)
 
 def about(request):
-    return render(request, 'blogg/about.html')
+    return render(request, 'blogg/about.html',{'title':'About this Blog'})

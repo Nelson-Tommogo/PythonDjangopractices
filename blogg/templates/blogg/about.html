@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About page</title>
-    </head>
+  {% if title %}
+  <title>Django About</title>
+    {% else %}
+      <title>Django About</title>
+  {% endif %} 
+</head>
     <body>
         <h1>
             This the  about Page ....Comming sooooooooon!!!!!
