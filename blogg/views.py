@@ -26,7 +26,10 @@ post=[
 
 # Create your views here.
 def home(request):
-    return render(request, 'blogg/home.html')
+    context={
+        'posts':post
+    }
+    return render(request, 'blogg/home.html',context)
 
 def about(request):
     return render(request, 'blogg/about.html')

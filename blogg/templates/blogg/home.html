@@ -1,34 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Website</title>
+  <title>Blog Website</title>
 </head>
 <body>
-  <header style="background-color: #333; color: #fff; padding: 20px;">
-    <h1>My Blog Website</h1>
-    <nav>
-      <ul style="list-style-type: none; margin: 0; padding: 0;">
-        <li style="display: inline;"><a href="#" style="color: #fff; text-decoration: none; padding: 10px;">Home</a></li>
-        <li style="display: inline;"><a href="#" style="color: #fff; text-decoration: none; padding: 10px;">About</a></li>
-        <li style="display: inline;"><a href="#" style="color: #fff; text-decoration: none; padding: 10px;">Services</a></li>
-        <li style="display: inline;"><a href="#" style="color: #fff; text-decoration: none; padding: 10px;">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section style="padding: 40px;">
-    <h2>About Us</h2>
-    <p>Welcome to My Blog Website....Comming Soon</p>
-  </section>
-  <section style="padding: 40px;">
-    <h2>Our Services</h2>
-    <ul>
-      <li>News Update</li>
-      <li>Smart Video</li>
-      <li>Smart audio</li>
-    </ul>
-  </section>
-  <footer style="background-color: #333; color: #fff; text-align: center; padding: 20px;">
-    <p>2023 My Website. All rights reserved.</p>
-  </footer>
+  {
+    %for post in posts %
+  }
+  <h1>{{post.title}}</h1>
+  <p><By>{post.author}</By></p>
+  {%endof %}
 </body>
 </html>
