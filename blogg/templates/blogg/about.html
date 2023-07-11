@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-  {% if title %}
-  <title>Django About</title>
-    {% else %}
-      <title>Django About</title>
-  {% endif %} 
-</head>
-    <body>
-        <h1>
-            This the  about Page ....Comming sooooooooon!!!!!
-        </h1>
-    </body>
-</html>
+{% extends "blogg/base.html"%}
+{% block content %}
+ <title>Django About</title>
+  {% endblock content %}
