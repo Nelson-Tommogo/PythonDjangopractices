@@ -28,7 +28,7 @@ post=[
 # Create your views here.
 def home(request):
     context={
-        'posts':post
+        'posts':Post.objects.all()
     }
     return render(request, 'blogg/home.html',context)
 
