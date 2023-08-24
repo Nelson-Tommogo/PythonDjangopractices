@@ -1,16 +1,15 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import UserRegisterForm
- 
+
 def register(request):
-    if request.method =='POST':
+    if request.method == 'POST':
         form = UserRegisterForm(request.POST)
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
-            messages.success(request, f'Accounted Created for {username}!')
-            return redirect('blogg-home')
-        else:
-            form = UserRegisterForm()
-        return render(request, "users/register.html", {"form": form})
-
+            messages.success(request, f'Account created for {username}!')
+            return redirect('blogg-home')  # Correct indentation
+    else:  # Correct indentation and placement of else block
+        form = UserRegisterForm()
+    return render(request, "users/register.html", {"form": form})
