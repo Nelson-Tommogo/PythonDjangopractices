@@ -2,20 +2,20 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<div class="content-section" style="max-width: 500px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); background-color: #fff;">
+<div class="content-section" style="max-width: 500px; margin: 0 auto; padding: 20px; border: 1px solid #2d8347; border-radius: 15px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); background-color: #fff;">
     <form method="POST">
         {% csrf_token %}
         <fieldset class="form-group">
-            <legend class="border-bottom mb-4" style="font-size: 1.2rem; font-weight: bold; margin-bottom: 15px;">Sign Up</legend>
+            <legend class="border-bottom mb-4" style="font-size: 1.4rem; font-weight: bold; margin-bottom: 15px;">Sign Up</legend>
             {{ form.as_p }}
 
         </fieldset>
         <div class="form-group" style="margin-bottom: 15px;">
-            <button class="btn btn-outline-info" type="submit" style="background-color: #fff; border-color: #17a2b8; color: #17a2b8;">Sign Up</button>
+            <button class="btn btn-outline-info" type="submit" style="background-color: #fff; border-color: #2d8347; color: #2d8347;">Sign Up</button>
         </div>
     </form>
     <div class="border-top pt-3">
-        <small class="text-muted" style="color: #6c757d;"> Already have an account? <a class="ml-2" href="{% url 'Login' %}" style="color: #17a2b8;">Sign In</a></small>
+        <small class="text-muted" style="color: #6c757d;"> Already have an account? <a class="ml-2" href="{% url 'Login' %}" style="color: #2d8347;">Sign In</a></small>
     </div>
 </div>
 {% endblock content %}
