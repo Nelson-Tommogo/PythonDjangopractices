@@ -25,6 +25,7 @@ urlpatterns = [
 
     path("admin/", admin.site.urls),
     path("register/", user_views.register, name="register"),
+    path("profile/", user_views.profile, name="profile"),
     path("login/", auth_views.LoginView.as_view(template_name="users/Login.html"), name="Login"),
     path("logout/", auth_views.LogoutView.as_view(template_name="users/Logout.html"), name="logout"),
     path("", include('blogg.urls')),
