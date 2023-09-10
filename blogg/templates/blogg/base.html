@@ -54,7 +54,7 @@
   {% if title %}
   <title>Django About</title>
     {% else %}
-      <title>Django About</title>
+      <title>My Blog Web Application</title>
   {% endif %} 
 </head>
 <header class="site-header">
@@ -75,8 +75,8 @@
           <a class="nav-item nav-link" href="{% url 'profile' %}">profile</a>
           <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
           {% else %}
-          <a class="nav-item nav-link" href="{% url 'Login' %}">Login</a>
-          <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
+          <a class="nav-item nav-link" href="{% url 'Login' %}">Sign In</a>
+          <a class="nav-item nav-link" href="{% url 'register' %}">Sign up</a>
           {% endif %}
         </div>
       </div>
